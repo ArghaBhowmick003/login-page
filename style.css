@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -16,7 +21,6 @@ body {
     background-position: center;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -25,15 +29,15 @@ body {
 }
 
 nav {
-    padding: 1.5em;
-    height: 4vmax;
+    padding: 1em;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: #41414179;
-    backdrop-filter: blur(7px);
+    background-color: #44444479;
+    backdrop-filter: blur(30px);
 }
 
 form {
@@ -46,7 +50,7 @@ form {
     border-radius: 1em;
 }
 
-.input-box>input,
+.input-box input,
 .btn {
     width: 100%;
     box-sizing: border-box;
@@ -55,16 +59,20 @@ form {
     border: none;
 }
 
+input:focus-visible{
+    outline-color:aqua;
+}
+
 .btn {
     background-color: #b2ede9;
     transition: 0.3s linear;
     cursor: pointer;
 }
 .btn:hover{
-    background-color: #0cb6ff;
+    background-color: #7772ff;
 }
 
-.left>a {
+.left a {
     text-decoration: none;
     color: white;
     font-size: 1em;
@@ -72,11 +80,6 @@ form {
 
 .right {
     display: flex;
-    column-gap: 1.3em;
+    gap: 1.3em;
     cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }
