@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+nav {
+    padding: 1.5em;
+    height: 4vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #41414179;
+    backdrop-filter: blur(7px);
+}
+
+form {
+
+    padding: 1.75em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75em;
+    background-color: #feffff68;
+    backdrop-filter: blur(30px);
+    border-radius: 1em;
+}
+
+.input-box>input,
+.btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7em;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn {
+    background-color: #b2ede9;
+}
+
+.left>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.right {
+    display: flex;
+    column-gap: 1.3em;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
